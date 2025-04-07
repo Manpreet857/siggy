@@ -128,7 +128,7 @@ function lastprice(name, tglink) {
     tb = textbox.style
     fbs = fullbox.style;
     tgb = tgbox.style;
-  let tgimage="https://i.ibb.co/q3gsmH04/tg5.jpg"
+  let tgimage=`https://i.ibb.co/q3gsmH04/tg5.jpg`
     fbs.width = "30vh"
     fbs.margin = "30px 0px 0px -2px "
     fbs.height = "87px"
@@ -154,7 +154,7 @@ function lastprice(name, tglink) {
     tgb.border = "5px solid white"
     tgb.borderRadius = "100px"
     tgb.margin = "-15px 0px 0px 30px"
-    tgb.backgroundImage = tgimage;
+    tgb.backgroundImage = `url('${tgimage}')`;
     tgb.backgroundSize = "cover";
 
     fullbox.addEventListener('click', () => {
