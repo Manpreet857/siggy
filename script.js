@@ -128,11 +128,11 @@ function lastprice(name, tglink) {
     tb = textbox.style
     fbs = fullbox.style;
     tgb = tgbox.style;
-  let tgimage=`https://i.ibb.co/q3gsmH04/tg5.jpg`
+  let tgimage="https://i.ibb.co/q3gsmH04/tg5.jpg"
     fbs.width = "30vh"
     fbs.margin = "30px 0px 0px -2px "
     fbs.height = "87px"
-    tb.fontSize = "20px"
+    tb.fontSize = "15px"
     
     fbs.background = "rgb(255,69,0)"
     fbs.borderRadius = "50px"
