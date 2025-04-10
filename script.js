@@ -40,7 +40,7 @@ next.addEventListener('click', () => {
         }
         else if (kmv <= 7 && itemv >= 199) {
             if (itemv < 299) {
-                price = (itemv + gstv) - 100;
+                price = (itemv + gstv) - 90;
                 prices.push(price)
                 newpage();
                 window.scrollTo({
@@ -49,7 +49,7 @@ next.addEventListener('click', () => {
                 });
             }
             else {
-                price = (itemv + gstv) - 100
+                price = (itemv + gstv) - 90
                 prices.push(price)
                 price2 = (itemv + gstv) - 125;
                 prices.push(price2)
@@ -101,7 +101,7 @@ function newpage() {
     imagepart.remove();
     calpart1.remove();
 
-    lpb("Here user according to 100off last price =" + prices[0] + " ");
+    lpb("Here user according to 90off last price =" + prices[0] + " ");
     lastprice("Seller 1,click on me name Mohan", `https://t.me/AlwaysHappyYou?,text=Hello,i am sending cart of siggy. My last price ${prices[0]} or ${prices[1]}`);
     lastprice("Seller 2,click on me name vibhu", `https://t.me/Vibhu665?text=Hello,i am sending cart of siggy. My last price ${prices[0]} or ${prices[1]}`);
     lastprice("Seller 3,click on me name Linchan", `https://t.me/L_A_H_S_I_V?text=Hello,i am sending cart of siggy. My last price ${prices[0]} or ${prices[1]}`);
