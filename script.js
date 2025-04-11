@@ -18,6 +18,7 @@ impartdiv.style.width = "100px"
 
 let price;
 let price2;
+let price3;
 let prices = [];
 let amount =[];
 mymain.style.borderBottom = "0px solid white"
@@ -42,9 +43,11 @@ next.addEventListener('click', () => {
             if (itemv < 299) {
                 price = (itemv + gstv) - 90;
                 prices.push(price)
+                price3=(itemv + gstv) - 120;
+                amount.push(price3)
                 newpage();
                 window.scrollTo({
-                    top: 0,
+                    top: 500,
                     behavior: "smooth"
                 });
             }
@@ -53,9 +56,11 @@ next.addEventListener('click', () => {
                 prices.push(price)
                 price2 = (itemv + gstv) - 125;
                 prices.push(price2)
+                price3=(itemv + gstv) - 120;
+                amount.push(price3)
                 newpage();
                 window.scrollTo({
-                    top: 0,
+                    top: 500,
                     behavior: "smooth"
                 });
             }
@@ -103,13 +108,23 @@ function newpage() {
 
     lpb("Here user according to 90off last price =" + prices[0] + " ");
     lastprice("Seller 1,click on me name Mohan", `https://t.me/AlwaysHappyYou?,text=Hello,i am sending cart of siggy. My last price ${prices[0]} or ${prices[1]}`);
-    lastprice("Seller 2,click on me name vibhu", `https://t.me/Vibhu665?text=Hello,i am sending cart of siggy. My last price ${prices[0]} or ${prices[1]}`);
-    lastprice("Seller 3,click on me name Linchan", `https://t.me/L_A_H_S_I_V?text=Hello,i am sending cart of siggy. My last price ${prices[0]} or ${prices[1]}`);
-    lastprice("Seller 4,click on me name rhaul", `https://t.me/rrrrrrahul_7?text=Hello,i am sending cart of siggy. My last price ${prices[0]} or ${prices[1]}`);
+    lastprice("Seller 2,click on me name Linchan", `https://t.me/L_A_H_S_I_V?text=Hello,i am sending cart of siggy. My last price ${prices[0]} or ${prices[1]}`);
+    lastprice("Seller 3,click on me name rhaul", `https://t.me/rrrrrrahul_7?text=Hello,i am sending cart of siggy. My last price ${prices[0]} or ${prices[1]}`);
+    lastprice("Seller 4,click on me name delby", `https://t.me/delby_15?text=Hello,i am sending cart of siggy. My last price ${prices[0]} or ${prices[1]}`);
+    lastprice("Seller 5,click on me name sumnath", `https://t.me/helpsumanth1?text=Hello,i am sending cart of siggy. My last price ${prices[0]} or ${prices[1]}`);
+
+
     if (prices[1] > 1) {
         lpb("Here user according to 125off last price =" + prices[1] + " ");
-        lastprice("Seller 1,click on  name Rahul", `https://t.me/rrrrrrahul_7?text=Hello,i am sending cart of siggy. My last price ${prices[0]} or ${prices[1]}`);
-        lastprice("Seller 2,click on me pp", `https://t.me/PrathP_1?text=Hello,i am sending cart of siggy. My last price ${prices[0]} or ${prices[1]}`);
+        lastprice("Seller 1,click on me name Mohan", `https://t.me/AlwaysHappyYou?,text=Hello,i am sending cart of siggy. My last price ${prices[0]} or ${prices[1]}`);
+        lastprice("Seller 2,click on  name Rahul", `https://t.me/rrrrrrahul_7?text=Hello,i am sending cart of siggy. My last price ${prices[0]} or ${prices[1]}`);
+        lastprice("Seller 3,click on me pp", `https://t.me/PrathP_1?text=Hello,i am sending cart of siggy. My last price ${prices[0]} or ${prices[1]}`);
+
+
+    }
+    if (amount[0] > 1) {
+        lpb("For mumbai,gurgano,delhi,noida last price =" + amount[0] + " ");
+        lastprice("Seller 1,click on me name Mohan", `https://t.me/AlwaysHappyYou?,text=Hello,i am sending cart of siggy.`);
 
 
     }
