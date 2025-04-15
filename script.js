@@ -41,7 +41,7 @@ next.addEventListener('click', () => {
         }
         else if (kmv <= 7 && itemv >= 199) {
             if (itemv < 249) {
-                price = (itemv + gstv) - 100;
+                price = (itemv + gstv) - 110;
                 prices.push(price)
                 amount.push(price3)
                 newpage();
@@ -51,7 +51,7 @@ next.addEventListener('click', () => {
                 });
             }
             else if(itemv<299){
-                price = (itemv + gstv) - 90
+                price = (itemv + gstv) - 110
                 prices.push(price)
                 price2 = (itemv + gstv) - 125;
                 prices.push(price2)
@@ -64,7 +64,7 @@ next.addEventListener('click', () => {
                 
             }
             else if(itemv>=299){
-                price = (itemv + gstv) - 90
+                price = (itemv + gstv) - 110
                 prices.push(price)
                 price2 = (itemv + gstv) - 125;
                 prices.push(price2)
@@ -117,7 +117,7 @@ function newpage() {
     imagepart.remove();
     calpart1.remove();
 
-    lpb("Here user according to 100off last price =" + prices[0] + " ");
+    lpb("Here user according to 110off last price =" + prices[0] + " ");
     lastprice("Seller 1,click on me name Mohan", `https://t.me/AlwaysHappyYou?,text=Hello,i am sending cart of siggy. My last price ${prices[0]} or ${prices[1]}`);
  
 
